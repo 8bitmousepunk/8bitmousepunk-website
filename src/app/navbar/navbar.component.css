@@ -1,0 +1,11 @@
+@tailwind components;
+
+@layer components {
+  .active {
+    @apply text-purple text-5xl relative;
+  }
+  .active:after {
+    @apply content-[''] block bg-blue w-2 h-full absolute right-0 top-0;
+  }
+}
+

@@ -1,0 +1,11 @@
+:host {
+  @apply block bg-home bg-cover bg-center p-8 h-full flex items-center;
+}
+
+.title--purple {
+  -webkit-text-stroke: 3px #D96CFF;
+}
+
+.title--blue {
+  -webkit-text-stroke: 3px #72FFF7;
+}
