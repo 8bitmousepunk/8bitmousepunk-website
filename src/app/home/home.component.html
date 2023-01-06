@@ -6,7 +6,7 @@
           Artem
         </span>
         <div class="inline-block overflow-hidden w-60 mx-20 drop-shadow-[4px_4px_0_rgb(234,103,255)]">
-          <img src="/assets/avatar.jpg" class="w-full" alt="">
+          <img [src]="avatarPath | assetsPath" class="w-full" alt="">
         </div>
       </div>
       <div class="text-right">
@@ -26,7 +26,7 @@
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, libero? Dicta tempore dolor suscipit culpa velit alias unde vitae dolores quibusdam. Dignissimos a ab adipisci necessitatibus animi architecto ipsa sunt aspernatur dicta doloremque perspiciatis, porro et consequuntur hic quae obcaecati.
   </p>
 
-  <a href="/assets/artem_anashchenkov_dev_ua.pdf" download class="inline-block border-2 border-purple text-purple text-5xl px-24 pt-0.5 pb-2 transition-colors hover:bg-purple hover:text-blue-light">cv</a>
+  <a [href]="resumePath | assetsPath" download class="inline-block border-2 border-purple text-purple text-5xl px-24 pt-0.5 pb-2 transition-colors hover:bg-purple hover:text-blue-light">cv</a>
 </div>
 
 

@@ -7,7 +7,7 @@
   <ul class="mt-auto p-4 bg-secondary-dark flex justify-center flex-wrap">
     <li *ngFor="let link of externalLinks" class="mx-3">
       <a [href]="link.url" class="inline-block transition-transform hover:scale-110">
-        <svg-icon [src]="link.icon"></svg-icon>
+        <svg-icon [src]="link.icon | assetsPath"></svg-icon>
       </a>
     </li>
   </ul>
