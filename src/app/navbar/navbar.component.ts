@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  items = [
-    { title: 'Home', link: '#', isActive: true },
-    { title: 'Portfolio', link: '#', isActive: false },
-    { title: 'Contact me', link: '#', isActive: false },
+  navItems = [
+    { title: 'Home', url: ['/home'], isActive: true },
+    { title: 'My works', url: ['/myworks'], isActive: false },
+    { title: 'Contact me', url: ['/contact'], isActive: false },
   ]
 
   externalLinks = [

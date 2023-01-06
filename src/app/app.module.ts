@@ -7,12 +7,16 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { AngularSvgIconModule } from 'angular-svg-icon';
+import { MyWorksComponent } from './my-works/my-works.component';
+import { ContactMeComponent } from './contact-me/contact-me.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    MyWorksComponent,
+    ContactMeComponent
   ],
   imports: [
     BrowserModule,
