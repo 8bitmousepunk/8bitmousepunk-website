@@ -13,7 +13,7 @@ module.exports = {
         pink: '0px 0px 0.5em #ec4899'
       },
       backgroundImage: {
-        'home': 'url(\'/assets/home-bg.png\')'
+        'home': 'url(\'assets/home-bg.png\')'
       }
     },
     colors: {
