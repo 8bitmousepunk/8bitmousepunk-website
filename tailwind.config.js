@@ -26,7 +26,7 @@ module.exports = {
       'blue': '#5FE2FF',
       'blue-dark': '#0A1D61',
       'blue-light': '#72FFF7',
-      'pink': '#FF66DD'
+      'pink': '#FF66DD',
     }
   }
 }

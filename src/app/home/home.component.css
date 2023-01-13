@@ -1,5 +1,5 @@
 :host {
-  @apply block bg-home bg-cover bg-center p-8 h-full flex items-center;
+  @apply block p-12 h-full h-full relative;
 }
 
 .title--purple {
@@ -8,4 +8,16 @@
 
 .title--blue {
   -webkit-text-stroke: 3px #72FFF7;
+}
+
+.frame:before, .frame:after {
+  @apply content-[''] w-full border-blue h-10 border-x-2 absolute bottom-0
+}
+
+.frame:after {
+  @apply bottom-0 border-b-2;
+}
+
+.frame:before {
+  @apply top-0 border-t-2;
 }

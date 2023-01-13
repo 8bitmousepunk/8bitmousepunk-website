@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sir13tommy-website';
+
+  leftIcon = '/assets/corner-left.svg';
+  rightIcon = '/assets/corner-right.svg';
 }

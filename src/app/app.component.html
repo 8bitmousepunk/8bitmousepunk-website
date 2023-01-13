@@ -1,8 +1,11 @@
-<div class="grid grid-cols-5 h-full">
-  <div class="bg-secondary col-span-1">
-    <app-navbar></app-navbar>
+<app-navbar class="block absolute left-0 top-1/2 -translate-y-1/2 z-10"></app-navbar>
+
+<main class="bg-home bg-cover bg-center h-full py-16 px-20">
+  <div class="relative border-4 border-pink h-full">
+    <svg-icon class="absolute top-3.5 left-3.5" [src]="leftIcon | assetsPath"></svg-icon>
+    <div class="h-full pl-72">
+      <router-outlet></router-outlet>
+    </div>
+    <svg-icon class="absolute bottom-3.5 right-3.5" [src]="rightIcon | assetsPath"></svg-icon>
   </div>
-  <main class="col-span-4">
-    <router-outlet></router-outlet>
-  </main>
-</div>
+</main>
