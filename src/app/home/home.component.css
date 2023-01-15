@@ -3,11 +3,22 @@
 }
 
 .title--purple {
-  -webkit-text-stroke: 3px #D96CFF;
+  -webkit-text-stroke: 3px theme('colors.purple');
+  text-shadow: 0 0 10px theme('colors.purple');
 }
 
 .title--blue {
-  -webkit-text-stroke: 3px #72FFF7;
+  -webkit-text-stroke: 3px theme('colors.blue-light');
+  text-shadow: 0 0 10px theme('colors.blue-light');
+}
+
+.subtitle {
+  @apply text-pink;
+  text-shadow: 0 0 5px theme('colors.pink');
+}
+
+.profile {
+  box-shadow: 4px 4px 0 theme('colors.purple'), -4px -4px 0 theme('colors.blue-light');
 }
 
 .frame:before, .frame:after {

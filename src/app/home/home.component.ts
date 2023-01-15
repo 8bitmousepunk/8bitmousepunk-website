@@ -6,8 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  avatarPath = 'assets/avatar.jpg';
+  profilePath = 'assets/profile.jpg';
   resumePath = 'assets/artem_anashchenkov_dev_ua.pdf';
+  saveIconPath = 'assets/save.svg';
 
   languages = [
     { path: 'assets/html.svg' },
