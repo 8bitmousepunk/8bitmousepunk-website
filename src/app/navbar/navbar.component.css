@@ -2,7 +2,8 @@
 
 @layer components {
   .active, .nav-item:hover {
-    @apply text-purple-dark font-medium bg-blue drop-shadow-[3px_3px_0_rgb(234,103,255)];
+    @apply text-purple-dark font-medium bg-blue;
+    filter: drop-shadow(3px 3px theme('colors.purple'))
   }
 }
 

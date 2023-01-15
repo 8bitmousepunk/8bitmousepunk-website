@@ -4,12 +4,15 @@
 
 .title--purple {
   -webkit-text-stroke: 3px theme('colors.purple');
-  text-shadow: 0 0 10px theme('colors.purple');
+  --text-shadow: 0 0 10px theme('colors.purple');
+  animation: text-shadow-pulse 2s linear infinite alternate backwards;
 }
 
 .title--blue {
   -webkit-text-stroke: 3px theme('colors.blue-light');
-  text-shadow: 0 0 10px theme('colors.blue-light');
+  /* text-shadow: 0 0 10px theme('colors.blue-light'); */
+  --text-shadow: 0 0 10px theme('colors.blue-light');
+  animation: text-shadow-pulse 1s linear infinite alternate backwards;
 }
 
 .subtitle {
@@ -22,13 +25,36 @@
 }
 
 .frame:before, .frame:after {
-  @apply content-[''] w-full border-blue h-10 border-x-2 absolute bottom-0
-}
+  @apply content-[''] w-full border-blue h-10 border-x-2 absolute bottom-0;
 
-.frame:after {
-  @apply bottom-0 border-b-2;
 }
 
 .frame:before {
   @apply top-0 border-t-2;
+  --translate-from: 0, 100%;
+  animation: translate 0.3s ease-out forwards;
+}
+
+.frame:after {
+  @apply bottom-0 border-b-2;
+  --translate-from: 0, -100%;
+  animation: translate 0.3s ease-out forwards;
+}
+
+@keyframes text-shadow-pulse {
+  0% {
+    text-shadow: var(--text-shadow);
+  }
+  100% {
+    text-shadow: 0 0;
+  }
+}
+
+@keyframes translate {
+  0% {
+    transform: translate(var(--translate-from))
+  }
+  100% {
+    transform: translate(0);
+  }
 }
