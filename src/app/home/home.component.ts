@@ -11,11 +11,13 @@ export class HomeComponent implements OnInit {
   saveIconPath = 'assets/save.svg';
 
   languages = [
-    { path: 'assets/html.svg' },
-    { path: 'assets/js.svg' },
-    { path: 'assets/css.svg' },
-    { path: 'assets/c.svg' },
-    { path: 'assets/c++.svg' }
+    { iconClass: 'icon-js' },
+    { iconClass: 'icon-html' },
+    { iconClass: 'icon-css' },
+    { iconClass: 'icon-ts' },
+    { iconClass: 'icon-c' },
+    { iconClass: 'icon-cplusplus' },
+    { iconClass: 'icon-asm' }
   ]
 
   constructor() { }

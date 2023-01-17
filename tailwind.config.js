@@ -4,10 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'alienencounter': ['alien_encountersregular', 'sans-serif'],
-        'neonretro': ['neon_retro', 'sans-serif'],
         'rubik': ['Rubik', 'sans-serif'],
-        'yellowtail': ['Yellowtail', 'cursive']
+        'yellowtail': ['Yellowtail', 'cursive'],
       },
       textNeon: {
         pink: '0px 0px 0.5em #ec4899'
@@ -27,6 +25,7 @@ module.exports = {
       'blue-dark': '#0A1D61',
       'blue-light': '#72FFF7',
       'pink': '#FF66DD',
+      'pink-dark': '#7B3FBF'
     }
   }
 }

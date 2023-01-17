@@ -1,12 +1,12 @@
 <nav class="flex flex-col bg-gradient-to-b from-secondary to-transparent">
-  <div class="pt-7 pr-12 pl-24 pb-8">
-    <svg-icon [src]="logo | assetsPath"></svg-icon>
+  <div class="p-3 md:pl-8 md:pr-3 md:py-3 2xl:pt-7 2xl:pr-12 2xl:pl-24 2xl:pb-8">
+    <img [src]="logo" class="inline-block 2xl:w-56 md:w-40">
     <ul class="my-8">
       <li *ngFor="let item of navItems">
         <a href="#"
           [routerLink]="item.path"
           routerLinkActive="active"
-          class="nav-item relative text-xl text-blue-light block px-8 py-2.5 mb-3 border border-blue-light whitespace-nowrap transition-colors">
+          class="nav-item block md:text-lg 2xl:text-xl md:px-6 2xl:px-8 md:py-2 2xl:py-2.5 md:mb-2.5 2xl:mb-3 border border-blue-light text-blue-light whitespace-nowrap transition-colors">
             {{item.title}}
         </a>
       </li>
@@ -14,8 +14,8 @@
   </div>
   <ul class="mt-auto p-4 bg-secondary-dark flex justify-center flex-wrap">
     <li *ngFor="let link of externalLinks" class="mx-3">
-      <a [href]="link.path" class="inline-block transition-transform hover:scale-110">
-        <svg-icon [src]="link.icon | assetsPath"></svg-icon>
+      <a [href]="link.path" class="inline-block text-purple text-4xl 2xl:text-5xl transition-transform hover:scale-110">
+        <i [class]="link.iconClass"></i>
       </a>
     </li>
   </ul>

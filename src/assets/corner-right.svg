@@ -1,3 +1,40 @@
-<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M41 21L21 41M41 11L11 41M41 1L1 41" stroke="#FF66DD" stroke-width="2"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="42"
+   height="42"
+   viewBox="0 0 42 42"
+   fill="none"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="corner-right.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     showgrid="false"
+     inkscape:zoom="4.9345238"
+     inkscape:cx="18.238842"
+     inkscape:cy="33.843185"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="2552"
+     inkscape:window-y="350"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <path
+     style="color:#000000;fill:#ff66dd;-inkscape-stroke:none"
+     d="M 40.292969,0.29296875 0.29296875,40.292969 1.7070312,41.707031 41.707031,1.7070312 Z m 0,10.00000025 -30,30 1.414062,1.414062 30,-30 z m 0,10 -20,20 1.414062,1.414062 20,-20 z"
+     id="path2" />
 </svg>

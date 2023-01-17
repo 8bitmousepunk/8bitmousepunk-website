@@ -1,11 +1,11 @@
-<div class="z-10 flex justify-center py-16">
+<div class="h-full flex items-center justify-center pt-16 pb-28">
   <div class="mx-3">
-    <h2 class="title--purple my-1 text-6xl font-bold uppercase">
+    <h2 class="title--purple my-1 md:text-5xl 2xl:text-6xl font-bold uppercase">
       <div class="text-left whitespace-nowrap">
         <span class="text-purple-dark">
           Artem
         </span>
-        <div class="profile inline-block overflow-hidden w-60 mx-20">
+        <div class="profile inline-block overflow-hidden md:w-48 2xl:w-60 md:mx-5 2xl:mx-20">
           <img [src]="profilePath" class="w-full" alt="">
         </div>
       </div>
@@ -15,30 +15,30 @@
         </span>
       </div>
     </h2>
-    <h3 class="subtitle my-1 font-yellowtail text-5xl text-right mr-24">
+    <h3 class="subtitle my-1 font-yellowtail md:text-3xl 2xl:text-5xl text-right md:mr-12 2x:mr-24">
       Programmer
     </h3>
   </div>
 
   <div class="mx-3">
-    <p class="mt-6 mb-24 max-w-xs text-xl text-blue-light">
+    <p class="mt-6 md:mb-12 2xl:mb-24 md:text-base 2xl:text-xl max-w-xs text-blue-light">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, libero? Dicta tempore dolor suscipit culpa
       velit alias unde vitae dolores quibusdam. Dignissimos a ab adipisci necessitatibus animi architecto ipsa sunt
       aspernatur dicta doloremque perspiciatis, porro et consequuntur hic quae obcaecati.
     </p>
 
     <a [href]="resumePath" download
-      class="inline-block whitespace-nowrap border-2 border-purple text-purple text-5xl px-24 pt-0.5 pb-2 transition-colors hover:bg-purple hover:text-blue-light stroke-purple hover:stroke-blue-light">
-      <svg-icon [src]="saveIconPath" class="inline-block align-middle"></svg-icon>
+      class="inline-block whitespace-nowrap border-2 border-purple text-purple md:text-2xl 2xl:text-5xl md:px-14 2xl:px-24 pt-0.5 pb-2 transition-colors hover:bg-purple hover:text-blue-light stroke-purple hover:stroke-blue-light">
+      <i class="icon-save align-middle"></i>
       cv
     </a>
   </div>
 </div>
 
 <div class="frame flex flex-column -z-10 absolute top-6 bottom-6 left-1/2 -translate-x-1/2">
-  <ul class="mt-auto mb-4 flex">
-    <li *ngFor="let item of languages" class="mx-5">
-      <svg-icon [src]="item.path"></svg-icon>
+  <ul class="text-pink-dark md:text-5xl 2xl:text-6xl mt-auto mb-4 flex">
+    <li *ngFor="let item of languages" class="md:mx-3 2xl:mx-5">
+      <i [class]="item.iconClass"></i>
     </li>
   </ul>
 </div>

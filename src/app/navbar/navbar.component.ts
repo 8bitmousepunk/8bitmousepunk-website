@@ -16,8 +16,8 @@ export class NavbarComponent implements OnInit {
   ]
 
   externalLinks = [
-    { path: 'https://github.com/8bitmousepunk', icon: '/assets/github.svg' },
-    { path: 'https://www.linkedin.com/in/artem-anashchenkov/', icon: '/assets/linkedin.svg' }
+    { path: 'https://github.com/8bitmousepunk', iconClass: 'icon-github' },
+    { path: 'https://www.linkedin.com/in/artem-anashchenkov/', iconClass: 'icon-linkedin' }
   ]
 
   constructor() { }

@@ -1,5 +1,5 @@
 :host {
-  @apply block p-12 h-full h-full relative;
+  @apply block md:p-3 2xl:p-12 h-full relative;
 }
 
 .title--purple {
