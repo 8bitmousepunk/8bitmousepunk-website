@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { BIO } from './home.text';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +9,6 @@ export class HomeComponent implements OnInit {
   profilePath = 'assets/profile.jpg';
   resumePath = 'assets/artem_anashchenkov_dev_ua.pdf';
   saveIconPath = 'assets/save.svg';
-  bio = BIO;
 
   languages = [
     { iconClass: 'icon-js' },
