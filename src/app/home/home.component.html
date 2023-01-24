@@ -1,11 +1,11 @@
 <div class="h-full flex items-center justify-center pt-16 pb-28">
   <div class="mx-3">
-    <h2 class="title--purple my-1 md:text-5xl 2xl:text-6xl font-bold uppercase">
+    <h2 class="title--purple my-1 text-5xl xl:text-6xl font-bold uppercase">
       <div class="text-left whitespace-nowrap">
         <span class="text-purple-dark">
           Artem
         </span>
-        <div class="profile inline-block overflow-hidden md:w-48 2xl:w-60 md:mx-5 2xl:mx-20">
+        <div class="profile inline-block overflow-hidden w-48 xl:w-56 2xl:w-60 md:mx-5 2xl:mx-14">
           <img [src]="profilePath" class="w-full" alt="">
         </div>
       </div>
@@ -15,16 +15,14 @@
         </span>
       </div>
     </h2>
-    <h3 class="subtitle my-1 font-yellowtail md:text-3xl 2xl:text-5xl text-right md:mr-12 2x:mr-24">
+    <h3 class="subtitle my-1 font-yellowtail md:text-3xl xl:text-4xl 2xl:text-5xl text-right md:mr-12 2x:mr-24">
       Programmer
     </h3>
   </div>
 
   <div class="mx-3">
     <pre>
-      <code class=" mt-6 md:mb-12 2xl:mb-24 md:text-base 2xl:text-xl max-w-xs text-blue-light">
-        {{ bio }}
-      </code>
+      <p class="font-mono mt-6 mb-12 xl:mb-16 2xl:mb-24 md:text-base xl:text-lg 2xl:text-xl text-blue-light">{{ bio }}</p>
     </pre>
 
     <a [href]="resumePath" download

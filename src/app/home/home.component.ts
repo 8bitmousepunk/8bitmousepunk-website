@@ -10,7 +10,7 @@ export class HomeComponent implements OnInit {
   profilePath = 'assets/profile.jpg';
   resumePath = 'assets/artem_anashchenkov_dev_ua.pdf';
   saveIconPath = 'assets/save.svg';
-  bio = BIO;
+  bio = BIO.trim();
 
   languages = [
     { iconClass: 'icon-js' },
