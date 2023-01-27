@@ -5,14 +5,12 @@
 .title--purple {
   -webkit-text-stroke: 3px theme('colors.purple');
   --text-shadow: 0 0 10px theme('colors.purple');
-  animation: text-shadow-pulse 2s linear infinite alternate backwards;
 }
 
 .title--blue {
   -webkit-text-stroke: 3px theme('colors.blue-light');
   /* text-shadow: 0 0 10px theme('colors.blue-light'); */
   --text-shadow: 0 0 10px theme('colors.blue-light');
-  animation: text-shadow-pulse 1s linear infinite alternate backwards;
 }
 
 .subtitle {

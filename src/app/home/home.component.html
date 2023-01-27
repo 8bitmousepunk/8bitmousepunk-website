@@ -1,12 +1,12 @@
-<div class="h-full flex flex-col lg:flex-row items-center justify-center pt-16 pb-28">
+<div class="h-full flex flex-col lg:flex-row items-center justify-start lg:justify-center pt-10 pb-10 lg:pt-16 lg:pb-28">
   <div class="mx-3">
     <h2 class="title--purple my-1 text-4xl xl:text-6xl font-bold uppercase">
       <div class="text-left whitespace-nowrap">
-        <span class="text-purple-dark">
+        <span class="block lg:inline text-center lg:text-left text-purple-dark">
           Artem
         </span>
-        <div class="profile inline-block overflow-hidden w-44 xl:w-56 2xl:w-60 md:mx-5 2xl:mx-14">
-          <img [src]="profilePath" class="w-full" alt="">
+        <div class="block lg:inline-block md:mx-5 2xl:mx-14">
+          <img [src]="profilePath" class="profile w-44 xl:w-56 2xl:w-60 mx-auto" alt="">
         </div>
       </div>
       <div class="text-right">
@@ -20,22 +20,19 @@
     </h3>
   </div>
 
-  <div class="mx-3">
-    <pre class="inline-block lg:block align-top">
-      <p class="font-mono my-2 text-base xl:text-lg 2xl:text-xl text-blue-light">{{ bio }}</p>
-    </pre>
+  <div class="mx-3 text-center">
+    <pre class="inline-block lg:block align-top font-mono my-2 text-left text-sm lg:text-base xl:text-lg 2xl:text-xl text-blue-light"><p>{{ bio }}</p></pre>
 
     <a [href]="resumePath" download
-      class="inline-block whitespace-nowrap border-2 border-purple text-purple mt-7 lg:mt-0 md:text-2xl 2xl:text-5xl md:px-14 2xl:px-24 pt-0.5 pb-2 transition-colors hover:bg-purple hover:text-blue-light stroke-purple hover:stroke-blue-light">
-      <i class="icon-save align-middle"></i>
-      cv
+      class="inline-block whitespace-nowrap border-2 border-purple text-purple mx-auto lg:mx-0 text-xl md:text-2xl 2xl:text-5xl py-5 px-10 lg:px-14 2xl:px-24 pt-0.5 pb-2 transition-colors hover:bg-purple hover:text-blue-light stroke-purple hover:stroke-blue-light">
+      <i class="icon-save align-middle"></i> cv
     </a>
   </div>
 </div>
 
 <div class="frame flex flex-column -z-10 absolute top-6 bottom-6 left-1/2 -translate-x-1/2">
-  <ul class="text-pink-dark md:text-5xl 2xl:text-6xl mt-auto mb-4 flex">
-    <li *ngFor="let item of languages" class="md:mx-3 2xl:mx-5">
+  <ul class="text-pink-dark text-3xl md:text-5xl 2xl:text-6xl mt-auto mb-4 flex">
+    <li *ngFor="let item of languages" class="mx-1 md:mx-4 2xl:mx-5">
       <i [class]="item.iconClass"></i>
     </li>
   </ul>

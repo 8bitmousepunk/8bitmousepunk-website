@@ -1,5 +1,9 @@
 @tailwind components;
 
+:host {
+  @apply lg:absolute lg:left-0 lg:top-1/2 lg:-translate-y-1/2 lg:z-10;
+}
+
 @layer components {
   .active, .nav-item:hover {
     @apply text-purple-dark font-medium bg-blue;
