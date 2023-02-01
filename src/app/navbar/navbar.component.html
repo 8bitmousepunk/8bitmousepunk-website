@@ -1,7 +1,7 @@
 <nav class="flex flex-row lg:flex-col bg-gradient-to-b from-secondary to-transparent">
-  <div class="p-3 md:pl-8 md:pr-3 md:py-3 xl:pl-16 2xl:pt-7 2xl:pr-12 2xl:pl-24 2xl:pb-8">
+  <div class="p-3 md:pl-8 md:pr-3 md:py-3 xl:pl-16 2xl:pt-5 2xl:pr-12 2xl:pl-24">
     <img [src]="logo" class="2xl:w-56 md:w-40 hidden lg:inline-block">
-    <ul class="my-8 flex lg:block justify-center">
+    <ul class="my-2 lg:my-6 flex lg:block justify-center">
       <li *ngFor="let item of navItems">
         <a href="#"
           [routerLink]="item.path"
@@ -12,7 +12,7 @@
       </li>
     </ul>
   </div>
-  <ul class="ml-auto lg:ml-0 lg:mt-auto p-4 bg-secondary-dark flex justify-center flex-wrap">
+  <ul class="ml-auto lg:ml-0 lg:mt-auto p-4 bg-secondary-dark flex justify-center">
     <li *ngFor="let link of externalLinks" class="mx-3">
       <a [href]="link.path" class="inline-block text-purple text-4xl 2xl:text-5xl transition-transform hover:scale-110">
         <i [class]="link.iconClass"></i>

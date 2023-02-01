@@ -23,8 +23,7 @@
 }
 
 .frame:before, .frame:after {
-  @apply content-[''] w-full border-blue h-10 border-x-2 absolute bottom-0;
-
+  @apply lg:content-[''] w-full border-blue h-10 border-x-2 absolute bottom-0;
 }
 
 .frame:before {

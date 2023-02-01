@@ -1,4 +1,4 @@
-<div class="h-full flex flex-col lg:flex-row items-center justify-start lg:justify-center pt-10 pb-10 lg:pt-16 lg:pb-28">
+<div class="lg:h-full flex flex-col lg:flex-row items-center justify-start lg:justify-center pt-10 pb-10 lg:pt-16 lg:pb-28">
   <div class="mx-3">
     <h2 class="title--purple my-1 text-4xl xl:text-6xl font-bold uppercase">
       <div class="text-left whitespace-nowrap">
@@ -20,18 +20,18 @@
     </h3>
   </div>
 
-  <div class="mx-3 text-center">
+  <div class="mx-3 text-center lg:text-left">
     <pre class="inline-block lg:block align-top font-mono my-2 text-left text-sm lg:text-base xl:text-lg 2xl:text-xl text-blue-light"><p>{{ bio }}</p></pre>
 
     <a [href]="resumePath" download
-      class="inline-block whitespace-nowrap border-2 border-purple text-purple mx-auto lg:mx-0 text-xl md:text-2xl 2xl:text-5xl py-5 px-10 lg:px-14 2xl:px-24 pt-0.5 pb-2 transition-colors hover:bg-purple hover:text-blue-light stroke-purple hover:stroke-blue-light">
+      class="inline-block whitespace-nowrap border-2 border-purple text-purple text-xl md:text-2xl lg:my-4 2xl:text-4xl py-5 px-10 lg:px-14 2xl:px-20 pt-0.5 pb-2 transition-colors hover:bg-purple hover:text-blue-light stroke-purple hover:stroke-blue-light">
       <i class="icon-save align-middle"></i> cv
     </a>
   </div>
 </div>
 
-<div class="frame flex flex-column -z-10 absolute top-6 bottom-6 left-1/2 -translate-x-1/2">
-  <ul class="text-pink-dark text-3xl md:text-5xl 2xl:text-6xl mt-auto mb-4 flex">
+<div class="frame block lg:flex lg:flex-column lg:-z-10 lg:absolute lg:top-6 lg:bottom-6 lg:left-1/2 lg:-translate-x-1/2">
+  <ul class="text-pink-dark text-3xl md:text-5xl 2xl:text-6xl mt-auto mb-4 flex justify-center">
     <li *ngFor="let item of languages" class="mx-1 md:mx-4 2xl:mx-5">
       <i [class]="item.iconClass"></i>
     </li>
